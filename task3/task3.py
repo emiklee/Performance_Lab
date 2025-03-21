@@ -63,4 +63,4 @@ def report(v, t, r):  # главная функция которая запис�
         return resul_insert_tests  # возвращаю результат
 
 
-report(path_values, path_tests, path_report)  # печатаю результат функции
+report(path_values, path_tests, path_report)  # вызываю функцию
