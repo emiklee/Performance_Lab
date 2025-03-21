@@ -1,12 +1,10 @@
 import sys
 
-with open('numbers.txt', 'w+', encoding='utf-8') as file:  # Создаем файл на запись входящих данных
-    temp = ''   # переменная для сохранения данных
-    for i in sys.stdin:     # открываю цикл для ввода данных
-        temp += i.strip()+' '  # запись данных в переменную
-    file.write(temp)  # запись файла
+if len(sys.argv) != 2:  # печатаем сообщение в случае не корректного заполнения
+    print('Ошибка! Образец того как надо заполнить поле--->: python.py task4.py numbers.txt')
+    sys.exit(1)     # выход из режима ввода
 
-path_numbers_file = './numbers.txt'  # путь к созданному файлу
+path_numbers_file = sys.argv[1]  # передаем аргумент в переменную
 
 
 def minimal_move(p_n_f):  # функция выводящая минимальное количество ходов
