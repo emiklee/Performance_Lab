@@ -2,7 +2,7 @@ import json
 import sys
 
 if len(sys.argv) != 4:  # печатаем сообщение в случае не корректного заполнения
-    print('Ошибка! Образец того как надо заполнить поле--->: python.py values.json tests.json report.json')
+    print('Ошибка! Образец того как надо заполнить поле--->: python.py task3.py values.json tests.json report.json')
     sys.exit(1)     # выход из режима ввода
 
 path_values = sys.argv[1]   # передаем 1 аргумент в переменную

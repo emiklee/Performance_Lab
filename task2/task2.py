@@ -2,7 +2,7 @@ from math import sqrt
 import sys
 
 if len(sys.argv) != 3:  # печатаем сообщение в случае не корректного заполнения
-    print('Ошибка! Образец того как надо заполнить поле--->: python.py circle.txt dot.txt')
+    print('Ошибка! Образец того как надо заполнить поле--->: python.py task2.py circle.txt dot.txt')
     sys.exit(1)     # выход из режима ввода
 
 path_circle = sys.argv[1]    # передаем 1 аргумент в переменную
